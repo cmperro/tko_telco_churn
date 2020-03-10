@@ -40,7 +40,7 @@ schema = StructType(
 )    
     
 telco_data = spark.read.csv(
-  "s3a://cdp-cldr-virginia/cdp-cldr-virginia-dl/data/churn/WA_Fn-UseC_-Telco-Customer-Churn-.csv",
+  "file:/home/cdsw/raw/WA_Fn-UseC_-Telco-Customer-Churn-.csv",
   header=True,
   schema=schema,
   sep=',',
